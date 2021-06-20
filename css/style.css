@@ -1,0 +1,69 @@
+.container {
+	margin: auto;
+	max-width: 1200px;
+	width: 90%;
+}
+
+.flexer {
+	display: -ms-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.sound-library {
+	background-color: #ddd;
+	padding: 20px;
+	width: 18%;
+}
+
+.main-sumpler {
+	background-color: #ddd;
+	padding: 30px;
+	width: 45%;
+}
+
+.right-sumpler-custom {
+	background-color: #ddd;
+	padding: 30px;
+	width: 20%;
+}
+
+.sl-content a {
+	background-color: #eee;
+	display: inline-block;
+	margin: 0 0 10px 0;
+	padding: 20px;
+	width: 100%;
+}
+
+.sl-content a p {
+	display: inline-block;
+}
+
+.sumpler-btn-wrap {
+	display: -ms-flex;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+
+.sumpler-btn
+.lsc-content a {
+	background-color: #eee;
+	display: inline-block;
+	margin: 0 0 10px 0;
+	padding: 20px;
+	width: 100%;
+}
+
+.sumpler-btn
+.lsc-content a p {
+	display: inline-block;
+}
+
+.btnwrapper-v2 {
+	border-bottom: 1px solid #000;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+

@@ -15,9 +15,166 @@
   <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
-  <button onclick="play()" class="playbtn">[>]</button>
-  <script>
-  </script>
+
+  <div class="btnwrapper-v1">
+    <div class="case-btn-d">
+      <!-- <button onclick="play()" class="playbtn">[D]</button> -->
+      <button data-sumplerBtn="d" data-index="1" onclick="disc(this)" id="btn-d" class="playbtn">[D]</button>
+      <input type="range" id="vol-d" value="50" min="1" max="99">
+    </div><!--  .case-btn-d -->
+    <div class="case-btn-f">
+      <!-- <button onclick="play()" class="playbtn">[D]</button> -->
+      <button data-sumplerBtn="f" data-index="2" onclick="disc(this)" id="btn-f" class="playbtn">[F]</button>
+      <input type="range" id="vol-f" value="50" min="1" max="99">
+    </div><!--  .case-btn-d -->
+  </div><!--  .btnwrapper-v1 -->
+
+  <!-- header -->
+  <!-- nav(>.site-logo+.header-sumpler-custom-cell-container(>.header-sumpler-custom-cell*8+.header-login-cell(>p.login+p.regist))) -->
+  <nav>
+    <div class="site-logo">site-logo</div><!--  .site-logo -->
+    <div class="header-sumpler-custom-cell-container">
+      <div class="header-sumpler-custom-cell"></div><!--  .header-sumpler-custom-cell -->
+      <div class="header-sumpler-custom-cell"></div><!--  .header-sumpler-custom-cell -->
+      <div class="header-sumpler-custom-cell"></div><!--  .header-sumpler-custom-cell -->
+      <div class="header-sumpler-custom-cell"></div><!--  .header-sumpler-custom-cell -->
+      <div class="header-sumpler-custom-cell"></div><!--  .header-sumpler-custom-cell -->
+      <div class="header-sumpler-custom-cell"></div><!--  .header-sumpler-custom-cell -->
+      <div class="header-sumpler-custom-cell"></div><!--  .header-sumpler-custom-cell -->
+      <div class="header-sumpler-custom-cell"></div><!--  .header-sumpler-custom-cell -->
+      <div class="header-login-cell">
+        <p class="login"></p><!--  .login -->
+        <p class="regist"></p><!--  .regist -->
+      </div><!--  .header-login-cell -->
+    </div><!--  .header-sumpler-custom-cell-container -->
+  </nav>
+
+  <section class="container">
+    <section class="wrapper">
+      <div class="flexer">
+
+
+        <!-- sound-library -->
+        <!-- section.sound-library(>input.sl-search+ul.sl-wrapper(>li.sl-content(>a(>p{sound effect$}))*12)) -->
+        <section class="sound-library">
+          <input type="text" class="sl-search">
+          <ul class="sl-wrapper">
+            <!-- li.sl-content(>a(>p{sound effect$}))*12 -->
+            <li class="sl-content"><a href="">
+                <p>sound effect1</p>
+              </a></li><!--  .sl-content -->
+            <li class="sl-content"><a href="">
+                <p>sound effect2</p>
+              </a></li><!--  .sl-content -->
+            <li class="sl-content"><a href="">
+                <p>sound effect3</p>
+              </a></li><!--  .sl-content -->
+            <li class="sl-content"><a href="">
+                <p>sound effect4</p>
+              </a></li><!--  .sl-content -->
+            <li class="sl-content"><a href="">
+                <p>sound effect5</p>
+              </a></li><!--  .sl-content -->
+            <li class="sl-content"><a href="">
+                <p>sound effect6</p>
+              </a></li><!--  .sl-content -->
+            <li class="sl-content"><a href="">
+                <p>sound effect7</p>
+              </a></li><!--  .sl-content -->
+            <li class="sl-content"><a href="">
+                <p>sound effect8</p>
+              </a></li><!--  .sl-content -->
+            <li class="sl-content"><a href="">
+                <p>sound effect9</p>
+              </a></li><!--  .sl-content -->
+            <li class="sl-content"><a href="">
+                <p>sound effect10</p>
+              </a></li><!--  .sl-content -->
+            <li class="sl-content"><a href="">
+                <p>sound effect11</p>
+              </a></li><!--  .sl-content -->
+            <li class="sl-content"><a href="">
+                <p>sound effect12</p>
+              </a></li><!--  .sl-content -->
+          </ul><!--  .sl-wrapper -->
+        </section><!--  .sound-library -->
+
+        <!-- main-sumbler -->
+        <!-- section.main-sumpler(>.custom-wrap(>.custom)+form.sumpler-form(>.sumpler-btn-wrap(>.sumpler-btn*12)+input[action=submit])) -->
+        <section class="main-sumpler">
+          <div class="custom-wrap">
+            <div class="custom"></div><!--  .custom -->
+          </div><!--  .custom-wrap -->
+          <form action="" class="sumpler-form">
+            <div class="sumpler-btn-wrap">
+              <div class="sumpler-btn"></div><!--  .sumpler-btn -->
+              <div class="sumpler-btn"></div><!--  .sumpler-btn -->
+              <div class="sumpler-btn"></div><!--  .sumpler-btn -->
+              <div class="sumpler-btn"></div><!--  .sumpler-btn -->
+              <div class="sumpler-btn"></div><!--  .sumpler-btn -->
+              <div class="sumpler-btn"></div><!--  .sumpler-btn -->
+              <div class="sumpler-btn"></div><!--  .sumpler-btn -->
+              <div class="sumpler-btn"></div><!--  .sumpler-btn -->
+              <div class="sumpler-btn"></div><!--  .sumpler-btn -->
+              <div class="sumpler-btn"></div><!--  .sumpler-btn -->
+              <div class="sumpler-btn"></div><!--  .sumpler-btn -->
+              <div class="sumpler-btn"></div><!--  .sumpler-btn -->
+            </div><!--  .sumpler-btn-wrap -->
+            <input type="submit" value="設定を保存する">
+          </form><!--  .sumpler-form -->
+        </section><!--  .main-sumpler -->
+
+        <!-- right-sumpler-custom -->
+        <!-- section.right-sumpler-custom(>.lscw-search-container(>input.lscw-search)+ul.lscw-list(>li.lsc-content(>a(>p{sumpler custom $}))*12)) -->
+        <section class="right-sumpler-custom">
+          <div class="lscw-search-container"><input type="text" class="lscw-search"></div><!--  .lscw-search-container -->
+          <ul class="lscw-list">
+            <!-- li.lsc-content(>a(>p{sumpler custom $}))*12 -->
+            <li class="lsc-content"><a href="">
+                <p>sumpler custom 1</p>
+              </a></li><!--  .lsc-content -->
+            <li class="lsc-content"><a href="">
+                <p>sumpler custom 2</p>
+              </a></li><!--  .lsc-content -->
+            <li class="lsc-content"><a href="">
+                <p>sumpler custom 3</p>
+              </a></li><!--  .lsc-content -->
+            <li class="lsc-content"><a href="">
+                <p>sumpler custom 4</p>
+              </a></li><!--  .lsc-content -->
+            <li class="lsc-content"><a href="">
+                <p>sumpler custom 5</p>
+              </a></li><!--  .lsc-content -->
+            <li class="lsc-content"><a href="">
+                <p>sumpler custom 6</p>
+              </a></li><!--  .lsc-content -->
+            <li class="lsc-content"><a href="">
+                <p>sumpler custom 7</p>
+              </a></li><!--  .lsc-content -->
+            <li class="lsc-content"><a href="">
+                <p>sumpler custom 8</p>
+              </a></li><!--  .lsc-content -->
+            <li class="lsc-content"><a href="">
+                <p>sumpler custom 9</p>
+              </a></li><!--  .lsc-content -->
+            <li class="lsc-content"><a href="">
+                <p>sumpler custom 10</p>
+              </a></li><!--  .lsc-content -->
+            <li class="lsc-content"><a href="">
+                <p>sumpler custom 11</p>
+              </a></li><!--  .lsc-content -->
+            <li class="lsc-content"><a href="">
+                <p>sumpler custom 12</p>
+              </a></li><!--  .lsc-content -->
+          </ul><!--  .lscw-list -->
+        </section><!--  .right-sumpler-custom -->
+
+
+      </div><!--  .flexer -->
+    </section><!--  .wrapper -->
+  </section><!--  .container -->
+
+
   <script src="./js/lib.js" charset="utf-8"></script>
 </body>
 </html>

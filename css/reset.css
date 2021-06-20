@@ -23,6 +23,8 @@ time, mark, audio, video {
     vertical-align:baseline;
     background:transparent;
     line-height: 1;
+    list-style: none;
+
 }
 body {
     line-height:0;
@@ -49,6 +51,8 @@ a {
     vertical-align:baseline;
     background:transparent;
     text-decoration: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 /* change colours to suit your needs */
 ins {
