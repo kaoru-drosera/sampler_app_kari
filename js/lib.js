@@ -137,12 +137,11 @@ function volumeInit(soundName, volume, volumeValue){
 }
 
 function loopInit(soundName, loop, loopValue){
-  // 音量調節
+  // ループ切り替え
   loop.addEventListener('change', function () {
     loopValue = (loop.checked == true) ? loop.loop = true : loop.loop = false;
     soundName.loop = loopValue;
   },false);
-  console.log(soundD.loop);
 }
 console.log(soundD.loop);
 // console.log(loopValue_f);
@@ -157,58 +156,59 @@ document.body.addEventListener("keydown",
 
       // 上段
       case 'q':
-        play(soundQ);
+        play(soundQ, loopQ, loopValue_q);
         console.log("q pressed");
         break;
       case 'w':
-        play(soundW);
+        play(soundW, loopW, loopValue_w);
         console.log("w pressed");
         break;
       case 'e':
-        play(soundE);
+        play(soundE, loopE, loopValue_e);
         console.log("e pressed");
         break;
       case 'r':
-        play(soundR);
+        play(soundR, loopR, loopValue_r);
         console.log("r pressed");
         break;
 
       // 中段
       case 'a':
-        play(soundA);
+        play(soundA,loopA,loopValue_a);
         console.log("a pressed");
         break;
       case 's':
-        play(soundS);
+        play(soundS,loopS,loopValue_s);
         console.log("s pressed");
         break;
       case 'd':
-        play(soundD);
+        // document.getElementById("caseBtn_d").onclick;
+        play(soundD,loopD,loopValue_d);
         console.log("d pressed");
         break;
       case 'f':
-        play(soundF);
+        // document.getElementById("caseBtn_f").onclick;
+        play(soundF,loopF,loopValue_f);
         console.log("f pressed");
         break;
 
         // 下段
         case 'z':
-          play(soundZ);
+          play(soundZ, loopZ, loopValue_z);
           console.log("z pressed");
           break;
         case 'x':
-          play(soundX);
+          play(soundX, loopX, loopValue_x);
           console.log("x pressed");
           break;
         case 'c':
-          play(soundC);
+          play(soundC, loopC, loopValue_c);
           console.log("c pressed");
           break;
         case 'v':
-          play(soundV);
+          play(soundV, loopV, loopValue_v);
           console.log("v pressed");
           break;
-
     }
 
 
@@ -241,9 +241,21 @@ document.body.addEventListener("keydown",
 // }
 
 
-function play(plaing){
+function play(plaing,loop,loopValue){
+  if(loop.loop == true){
+    console.log("switchPlay mode");
+    if(plaing.paused == false){
+      plaing.pause();
+    } else {
+      plaing.currentTime = 0;
+      plaing.play();
+    };
+  } else {
+    console.log("normalPlay mode");
     plaing.currentTime = 0;
     plaing.play();
+  };
+  console.log(plaing.paused);
   // setTimeout(function(){
   //   sound.play();
   // },250);
@@ -252,6 +264,8 @@ function play(plaing){
   //   playPromise.catch(() => {sound.play();})
   // }
 };
+
+
 
 
 
