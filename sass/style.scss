@@ -74,9 +74,25 @@
   display: -ms-flex;
   display: flex;
   justify-content: space-between;
-  flex-flow: wrap;
+  // flex-flow: wrap;
 }
-.sumpler-btn
+.btnwrapper-v1
+{
+  width: 500px;
+
+}
+.case-btn
+{
+  width: 23%;
+  height: 100px;
+  border: 1px solid #000;
+  display: inline-block;
+  cursor: pointer;
+  input[type=range]
+  {
+    width: 100%;
+  }
+}
 
 // メインサンプラー ここまで
 

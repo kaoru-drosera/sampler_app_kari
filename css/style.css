@@ -43,11 +43,25 @@
 .sumpler-btn-wrap {
 	display: -ms-flex;
 	display: flex;
-	flex-flow: wrap;
 	justify-content: space-between;
 }
 
-.sumpler-btn
+.btnwrapper-v1 {
+	width: 500px;
+}
+
+.case-btn {
+	border: 1px solid #000;
+	cursor: pointer;
+	display: inline-block;
+	height: 100px;
+	width: 23%;
+}
+
+.case-btn input[type=range] {
+	width: 100%;
+}
+
 .lsc-content a {
 	background-color: #eee;
 	display: inline-block;
@@ -56,7 +70,6 @@
 	width: 100%;
 }
 
-.sumpler-btn
 .lsc-content a p {
 	display: inline-block;
 }
